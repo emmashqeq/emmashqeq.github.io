@@ -239,7 +239,35 @@ section{padding:110px 56px;}
 .btn-dark:hover{background:#1a1a1a;transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.3);}
 
 /* FOOTER */
-footer{background:var(--dark);padding:72px 56px 36px;border-top:1px solid var(--border2);}
+/* BLOG */
+#blog{padding:100px 56px;background:var(--dark);}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;}
+.blog-card{background:var(--card);border:1px solid var(--border2);border-radius:16px;padding:36px 32px;display:flex;flex-direction:column;gap:14px;cursor:pointer;transition:border-color .3s,transform .3s;}
+.blog-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.blog-card-coming{cursor:default;opacity:0.6;}
+.blog-card-coming:hover{border-color:var(--border2);transform:none;}
+.blog-cat{font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;}
+.blog-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--white);line-height:1.4;}
+.blog-excerpt{font-size:14px;color:var(--muted);line-height:1.7;}
+.blog-meta{display:flex;gap:16px;align-items:center;}
+.blog-date{font-size:12px;color:var(--muted);}
+.blog-read{font-size:12px;color:var(--gold);background:var(--gold-dim);padding:2px 10px;border-radius:20px;}
+.blog-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.blog-tag{font-size:11px;color:var(--muted);border:1px solid var(--border2);padding:2px 10px;border-radius:20px;}
+.blog-link{font-size:13px;font-weight:600;color:var(--gold);margin-top:4px;}
+.blog-link-muted{color:var(--muted);}
+@media(max-width:768px){.blog-grid{grid-template-columns:1fr;}}
+
+/* PRICING */
+#pricing{padding:100px 56px;background:var(--black);}
+.price-toggle-wrap{display:flex;gap:8px;justify-content:center;margin:40px 0 56px;}
+.price-toggle{padding:10px 28px;border-radius:50px;border:1px solid var(--border2);background:transparent;color:var(--muted);font-family:'DM Sans',sans-serif;font-size:14px;cursor:pointer;transition:all .2s;}
+.price-toggle.active{background:var(--gold);border-color:var(--gold);color:#000;font-weight:600;}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;}
+.price-card{background:var(--card);border:1px solid var(--border2);border-radius:16px;padding:40px 32px;display:flex;flex-direction:column;gap:20px;position:relative;transition:border-color .3s;}
+.price-card:hover{border-color:var(--gold);}
+.price-featured{border-color:var(--gold);background:linear-gradient(145deg,#0e0e0e,#1a1500);}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#000;font-size:11px;font-weight:700;padding:4px 16px;border-radius:50px;white-space:nowrap;letter-spacing:.5px;};padding:72px 56px 36px;border-top:1px solid var(--border2);}
 .foot-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:52px;margin-bottom:52px;}
 .foot-brand img{height:46px;margin-bottom:16px;display:block;}
 .foot-brand p{font-size:13px;color:var(--muted2);line-height:1.8;max-width:260px;margin-bottom:22px;}
@@ -306,6 +334,7 @@ footer{background:var(--dark);padding:72px 56px 36px;border-top:1px solid var(--
     <li><a onclick="go('team')">Team</a></li>
     <li><a onclick="go('why')">Why Us</a></li>
     <li><a href="https://148424192.hs-sites-eu1.com/case-studies" target="_blank">Case Studies ↗</a></li>
+    <li><a onclick="go('blog')">Blog</a></li>
     <li><a onclick="go('newsletter')">Newsletter</a></li>
   </ul>
   <div class="nav-right">
@@ -624,6 +653,130 @@ footer{background:var(--dark);padding:72px 56px 36px;border-top:1px solid var(--
       <div class="nl-perk">Growth tactics</div>
       <div class="nl-perk">No spam, ever</div>
     </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="sec-label">INSIGHTS</div>
+  <h2 class="sec-title">From The BuzzBurst Blog</h2>
+  <p class="sec-sub">Strategy, tips, and real-world marketing intelligence for startups and SMEs.</p>
+  <div class="blog-grid">
+
+    <div class="blog-card" data-reveal onclick="window.open('https://148424192.hs-sites-eu1.com/blog/email-personalization-barriers-in-automation-2026','_blank')">
+      <div class="blog-cat">Email Marketing</div>
+      <h3 class="blog-title">Email Personalization Barriers in Automation 2026</h3>
+      <p class="blog-excerpt">Personalized automated email campaigns should feel like one-to-one conversations. Yet for most B2B companies and local service businesses, they fall flat. Here's how to fix that.</p>
+      <div class="blog-meta">
+        <span class="blog-date">May 2026</span>
+        <span class="blog-read">8 min read</span>
+      </div>
+      <div class="blog-tags">
+        <span class="blog-tag">Email Marketing</span>
+        <span class="blog-tag">Automation</span>
+        <span class="blog-tag">B2B</span>
+      </div>
+      <div class="blog-link">Read Article →</div>
+    </div>
+
+    <div class="blog-card blog-card-coming" data-reveal>
+      <div class="blog-cat">SEO</div>
+      <h3 class="blog-title">Why Most UK Startups Are Invisible Online</h3>
+      <p class="blog-excerpt">Most UK startups invest in a website and assume visibility will follow. It won't. Here's the gap between having a site and being found — and how to close it.</p>
+      <div class="blog-meta">
+        <span class="blog-date">Coming Soon</span>
+      </div>
+      <div class="blog-tags">
+        <span class="blog-tag">SEO</span>
+        <span class="blog-tag">Startups</span>
+        <span class="blog-tag">UK</span>
+      </div>
+      <div class="blog-link blog-link-muted">Coming Soon</div>
+    </div>
+
+    <div class="blog-card blog-card-coming" data-reveal>
+      <div class="blog-cat">GEO</div>
+      <h3 class="blog-title">How to Make AI Recommend Your Brand</h3>
+      <p class="blog-excerpt">Search is changing. ChatGPT, Gemini and Perplexity are now where people find answers. Here's how to ensure your brand shows up in AI-generated responses.</p>
+      <div class="blog-meta">
+        <span class="blog-date">Coming Soon</span>
+      </div>
+      <div class="blog-tags">
+        <span class="blog-tag">GEO</span>
+        <span class="blog-tag">AI</span>
+        <span class="blog-tag">Strategy</span>
+      </div>
+      <div class="blog-link blog-link-muted">Coming Soon</div>
+    </div>
+
+  </div>
+  <div style="text-align:center;margin-top:48px;">
+    <button class="btn-gold" onclick="window.open('https://148424192.hs-sites-eu1.com/blog','_blank')">View All Posts →</button>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="sec-label">PACKAGES</div>
+  <h2 class="sec-title">Find Your Fit</h2>
+  <p class="sec-sub">Whether you need a one-off project or an ongoing partner, there's a package built for where you are right now.</p>
+
+  <div class="price-toggle-wrap">
+    <button class="price-toggle active" onclick="switchPricing('retainer',this)">Monthly Retainer</button>
+    <button class="price-toggle" onclick="switchPricing('project',this)">One-Off Project</button>
+  </div>
+
+  <div class="price-grid">
+
+    <!-- STARTER -->
+    <div class="price-card" data-reveal>
+      <div class="price-tier">Starter</div>
+      <div class="price-tag retainer">Perfect for early-stage brands getting off the ground</div>
+      <div class="price-tag project" style="display:none">A focused one-off campaign to test and launch</div>
+      <ul class="price-list">
+        <li>1 core service (your choice)</li>
+        <li>Monthly strategy session</li>
+        <li>Content calendar</li>
+        <li>Monthly performance report</li>
+        <li>Email support</li>
+      </ul>
+      <button class="btn-price" onclick="window.open('https://buzzburstmedia.co','_blank')">Get a Quote →</button>
+    </div>
+
+    <!-- GROWTH -->
+    <div class="price-card price-featured" data-reveal>
+      <div class="price-badge">Most Popular</div>
+      <div class="price-tier">Growth</div>
+      <div class="price-tag retainer">For growing brands ready to scale their marketing</div>
+      <div class="price-tag project" style="display:none">A full campaign build with strategy, execution and reporting</div>
+      <ul class="price-list">
+        <li>2–3 core services bundled</li>
+        <li>Bi-weekly strategy calls</li>
+        <li>Full content creation</li>
+        <li>Paid ad management</li>
+        <li>SEO + GEO optimisation</li>
+        <li>Bi-weekly performance reports</li>
+      </ul>
+      <button class="btn-price btn-price-gold" onclick="window.open('https://buzzburstmedia.co','_blank')">Get a Quote →</button>
+    </div>
+
+    <!-- SCALE -->
+    <div class="price-card" data-reveal>
+      <div class="price-tier">Scale</div>
+      <div class="price-tag retainer">Full-service partnership for ambitious brands</div>
+      <div class="price-tag project" style="display:none">End-to-end campaign strategy, build and ongoing optimisation</div>
+      <ul class="price-list">
+        <li>All services included</li>
+        <li>Dedicated account manager</li>
+        <li>Weekly strategy sessions</li>
+        <li>Full funnel management</li>
+        <li>Priority response</li>
+        <li>Quarterly brand audit</li>
+        <li>Custom reporting dashboard</li>
+      </ul>
+      <button class="btn-price" onclick="window.open('https://buzzburstmedia.co','_blank')">Get a Quote →</button>
+    </div>
+
   </div>
 </section>
 
