@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Paid Advertising — Meta Ads, TikTok Ads & Google Ads | BuzzBurst Media</title>
+<meta name="description" content="Meta Ads, TikTok Ads and Google Ads managed for UK startups and SMEs. We optimise for ROAS — not vanity metrics. BuzzBurst Media, London."/>
+<link rel="canonical" href="https://buzzburstsmedia.com/services/paid-advertising.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--gold:#F5A800;--gold-light:#FFD060;--black:#080808;--dark:#0E0E0E;--card:#131313;--border:rgba(245,168,0,0.14);--border2:rgba(255,255,255,0.06);--text:#EDE8DC;--muted:#706860;--muted2:#9A9080;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 56px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,8,8,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--text);}
+.nav-logo span{color:var(--gold);}
+.nav-back{font-size:13px;color:var(--muted2);transition:color .2s;}
+.nav-back:hover{color:var(--gold);}
+.btn-gold{background:var(--gold);color:#080808;border:none;padding:10px 24px;border-radius:5px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,168,0,.3);}
+.btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.14);padding:10px 22px;border-radius:5px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:140px 56px 80px;background:radial-gradient(ellipse at 80% 30%,rgba(245,168,0,0.07) 0%,transparent 55%),var(--black);}
+.hero-tag{display:inline-block;background:rgba(245,168,0,0.12);border:1px solid var(--border);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:6px 16px;border-radius:3px;margin-bottom:24px;}
+h1{font-family:'Syne',sans-serif;font-size:clamp(36px,5.5vw,72px);font-weight:800;line-height:1.05;max-width:800px;margin-bottom:24px;letter-spacing:-1px;}
+h1 em{color:var(--gold);font-style:normal;}
+.hero-sub{font-size:18px;color:var(--muted2);max-width:580px;line-height:1.75;margin-bottom:44px;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+.section{padding:90px 56px;}
+.section-tag{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+h2{font-family:'Syne',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weight:800;line-height:1.1;margin-bottom:16px;}
+.section-sub{font-size:16px;color:var(--muted2);max-width:580px;line-height:1.7;margin-bottom:48px;}
+.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.channel{background:var(--card);padding:40px 32px;transition:background .3s;position:relative;overflow:hidden;}
+.channel::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .3s;}
+.channel:hover::after{transform:scaleX(1);}
+.channel:hover{background:#161616;}
+.ch-icon{font-size:30px;margin-bottom:18px;}
+.ch-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:10px;}
+.ch-best{font-size:12px;color:var(--gold);font-weight:600;letter-spacing:.5px;margin-bottom:14px;}
+.ch-desc{font-size:13px;color:var(--muted2);line-height:1.75;}
+.what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.wi{background:var(--dark);padding:36px 28px;}
+.wi-icon{font-size:24px;margin-bottom:16px;}
+.wi-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:10px;}
+.wi-desc{font-size:13px;color:var(--muted2);line-height:1.7;}
+.roas-box{background:var(--card);border:1px solid var(--border);padding:48px;border-radius:4px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
+.rb-content h3{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;margin-bottom:16px;}
+.rb-content p{font-size:15px;color:var(--muted2);line-height:1.8;}
+.rb-content p strong{color:var(--text);}
+.rb-stats{display:flex;flex-direction:column;gap:20px;}
+.rb-stat{background:var(--dark);padding:20px 24px;border-left:3px solid var(--gold);}
+.rb-stat-num{font-family:'Syne',sans-serif;font-size:32px;font-weight:800;color:var(--gold);line-height:1;}
+.rb-stat-label{font-size:12px;color:var(--muted2);margin-top:4px;}
+.cta-section{background:var(--dark);border-top:1px solid var(--border);padding:100px 56px;text-align:center;}
+.cta-section h2{margin-bottom:16px;}
+.cta-section p{font-size:16px;color:var(--muted2);max-width:500px;margin:0 auto 40px;}
+footer{background:#050505;border-top:1px solid var(--border2);padding:32px 56px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);}
+footer a{color:var(--gold);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.section,.cta-section{padding-left:20px;padding-right:20px;}.hero{padding-top:100px;}.channels,.what-grid,.roas-box{grid-template-columns:1fr;}footer{flex-direction:column;gap:12px;text-align:center;padding:24px 20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="https://buzzburstsmedia.com" class="nav-logo">Buzz<span>Burst</span> Media</a>
+  <a href="https://buzzburstsmedia.com/#services" class="nav-back">← All Services</a>
+  <a href="https://buzzburstmedia.co" class="btn-gold">Get a Quote →</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">💰 Paid Advertising</div>
+  <h1>Ads that pay for<br>themselves — and then<br><em>some.</em></h1>
+  <p class="hero-sub">Meta Ads, TikTok Ads, Google Ads — managed end-to-end for UK startups and SMEs. We don't run ads to burn budget. We run them to generate a return. ROAS is the only metric that matters, and it's the one we obsess over.</p>
+  <div class="hero-actions">
+    <a href="https://buzzburstmedia.co" class="btn-gold">Get a Paid Ads Audit →</a>
+    <a href="https://buzzburstsmedia.com/#contact" class="btn-outline">Book a Call</a>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-tag">Ad Channels</div>
+  <h2>The right platform for your business</h2>
+  <p class="section-sub">Every ad platform has a different audience, algorithm and cost structure. We match your budget and goals to the platform that will perform best for you.</p>
+  <div class="channels">
+    <div class="channel">
+      <div class="ch-icon">📘</div>
+      <div class="ch-name">Meta Ads</div>
+      <div class="ch-best">Best for: e-commerce, B2C brands, local businesses</div>
+      <p class="ch-desc">Facebook and Instagram ads with the most sophisticated targeting available anywhere. Lookalike audiences, retargeting, dynamic product ads — we use every tool Meta offers to minimise your CPA and maximise ROAS.</p>
+    </div>
+    <div class="channel">
+      <div class="ch-icon">🎵</div>
+      <div class="ch-name">TikTok Ads</div>
+      <div class="ch-best">Best for: consumer brands, 18-35 audience, e-commerce</div>
+      <p class="ch-desc">TikTok's ad platform is underpriced compared to Meta — meaning you can reach large, engaged audiences at a fraction of the cost. We create native-feeling video ads that don't feel like ads, and that convert.</p>
+    </div>
+    <div class="channel">
+      <div class="ch-icon">🔍</div>
+      <div class="ch-name">Google Ads</div>
+      <div class="ch-best">Best for: high-intent searches, B2B, service businesses</div>
+      <p class="ch-desc">Search ads that appear when someone is actively looking for what you offer. The highest-intent traffic available. We manage keyword strategy, ad copy, bidding and landing page alignment — end to end.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">What We Manage</div>
+  <h2>Full-service paid advertising</h2>
+  <p class="section-sub">From campaign setup to creative testing to daily optimisation — we handle everything.</p>
+  <div class="what-grid">
+    <div class="wi">
+      <div class="wi-icon">🎯</div>
+      <div class="wi-title">Audience Targeting</div>
+      <p class="wi-desc">Interest, behaviour, lookalike, retargeting — we build layered audience strategies that reach the people most likely to convert, at every stage of the funnel.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">🎨</div>
+      <div class="wi-title">Creative Strategy</div>
+      <p class="wi-desc">Ad creative is the single biggest lever in paid social performance. We produce and test multiple creative angles, hooks and formats to find what converts best for your specific audience.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">💸</div>
+      <div class="wi-title">Budget Optimisation</div>
+      <p class="wi-desc">We allocate budget to what works and cut what doesn't — daily. No ad spend goes to waste. Every pound is tracked against performance benchmarks.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">🔁</div>
+      <div class="wi-title">Retargeting</div>
+      <p class="wi-desc">Website visitors, video viewers, email subscribers — we retarget warm audiences with the right message to bring them back and convert.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">📊</div>
+      <div class="wi-title">Tracking & Attribution</div>
+      <p class="wi-desc">Pixel setup, conversion tracking, GA4 integration — we make sure every conversion is tracked accurately so you know exactly what's driving results.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">📈</div>
+      <div class="wi-title">Reporting</div>
+      <p class="wi-desc">Weekly performance summaries and monthly deep-dive reports. ROAS, CPA, CTR, CPM — clear data, clear explanation, clear next steps.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-tag">Our Approach</div>
+  <div class="roas-box">
+    <div class="rb-content">
+      <h3>We don't run ads. We engineer returns.</h3>
+      <p>Most agencies set up a campaign, leave it running and send you a report full of impressions and reach figures. <strong>Impressions don't pay your bills. Revenue does.</strong></p>
+      <p>Every campaign we run is built around a clear ROAS target. We test aggressively in the first 30 days to find what works, then scale the winners and cut the losers. <strong>Your budget is treated like our own money.</strong></p>
+    </div>
+    <div class="rb-stats">
+      <div class="rb-stat">
+        <div class="rb-stat-num">ROAS</div>
+        <div class="rb-stat-label">The only metric we actually care about — return on every pound spent</div>
+      </div>
+      <div class="rb-stat">
+        <div class="rb-stat-num">CPA</div>
+        <div class="rb-stat-label">Cost per acquisition tracked for every campaign we run</div>
+      </div>
+      <div class="rb-stat">
+        <div class="rb-stat-num">30d</div>
+        <div class="rb-stat-label">Testing window to identify winning creative and audiences before scaling</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-tag" style="display:block;margin-bottom:16px;">Ready to Scale?</div>
+  <h2>Let's make your ad spend<br>work harder</h2>
+  <p>Book a free paid ads audit. We'll review your current campaigns (or plan your first) and show you exactly where the opportunity is.</p>
+  <a href="https://buzzburstmedia.co" class="btn-gold" style="font-size:15px;padding:16px 36px;">Get a Free Ads Audit →</a>
+</section>
+
+<footer>
+  <span>© 2026 BuzzBurst Media. London, UK.</span>
+  <a href="https://buzzburstsmedia.com">← Back to main site</a>
+</footer>
+</body>
+</html>
