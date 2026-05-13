@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Marketing Funnel Strategy for UK Startups | BuzzBurst Media</title>
+<meta name="description" content="Full-funnel marketing strategy for UK startups and SMEs. We map your customer journey and build the systems to move people from awareness to conversion. BuzzBurst Media, London."/>
+<link rel="canonical" href="https://buzzburstsmedia.com/services/funnel-strategy.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--gold:#F5A800;--gold-light:#FFD060;--black:#080808;--dark:#0E0E0E;--card:#131313;--border:rgba(245,168,0,0.14);--border2:rgba(255,255,255,0.06);--text:#EDE8DC;--muted:#706860;--muted2:#9A9080;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 56px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,8,8,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--text);}
+.nav-logo span{color:var(--gold);}
+.nav-back{font-size:13px;color:var(--muted2);transition:color .2s;}
+.nav-back:hover{color:var(--gold);}
+.btn-gold{background:var(--gold);color:#080808;border:none;padding:10px 24px;border-radius:5px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,168,0,.3);}
+.btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.14);padding:10px 22px;border-radius:5px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;text-decoration:none;display:inline-block;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:140px 56px 80px;background:radial-gradient(ellipse at 50% 60%,rgba(245,168,0,0.07) 0%,transparent 55%),var(--black);}
+.hero-tag{display:inline-block;background:rgba(245,168,0,0.12);border:1px solid var(--border);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding:6px 16px;border-radius:3px;margin-bottom:24px;}
+h1{font-family:'Syne',sans-serif;font-size:clamp(36px,5.5vw,72px);font-weight:800;line-height:1.05;max-width:800px;margin-bottom:24px;letter-spacing:-1px;}
+h1 em{color:var(--gold);font-style:normal;}
+.hero-sub{font-size:18px;color:var(--muted2);max-width:580px;line-height:1.75;margin-bottom:44px;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+.section{padding:90px 56px;}
+.section-tag{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+h2{font-family:'Syne',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weight:800;line-height:1.1;margin-bottom:16px;}
+.section-sub{font-size:16px;color:var(--muted2);max-width:580px;line-height:1.7;margin-bottom:48px;}
+.funnel{display:flex;flex-direction:column;gap:2px;max-width:900px;margin:0 auto;}
+.funnel-stage{display:grid;grid-template-columns:200px 1fr;gap:0;align-items:stretch;}
+.fs-label{background:var(--gold);color:#080808;padding:28px 24px;display:flex;flex-direction:column;justify-content:center;}
+.fs-stage{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;margin-bottom:4px;}
+.fs-sub{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;opacity:.7;}
+.fs-content{background:var(--card);border:1px solid var(--border2);padding:28px 32px;}
+.fs-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:10px;}
+.fs-desc{font-size:13px;color:var(--muted2);line-height:1.7;margin-bottom:12px;}
+.fs-tactics{display:flex;gap:8px;flex-wrap:wrap;}
+.tactic{background:rgba(245,168,0,0.1);border:1px solid var(--border);color:var(--gold);font-size:11px;font-weight:600;padding:4px 10px;border-radius:2px;}
+.what-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.wi{background:var(--dark);padding:36px 28px;}
+.wi-icon{font-size:24px;margin-bottom:16px;}
+.wi-title{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;margin-bottom:10px;}
+.wi-desc{font-size:13px;color:var(--muted2);line-height:1.7;}
+.truth-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
+.truth-content p{font-size:16px;color:var(--muted2);line-height:1.8;margin-bottom:20px;}
+.truth-content p strong{color:var(--text);}
+.leaks{display:flex;flex-direction:column;gap:16px;}
+.leak{background:var(--card);border:1px solid var(--border2);border-left:3px solid var(--gold);padding:20px 24px;}
+.leak-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;margin-bottom:6px;}
+.leak-desc{font-size:12px;color:var(--muted2);line-height:1.6;}
+.cta-section{background:var(--dark);border-top:1px solid var(--border);padding:100px 56px;text-align:center;}
+.cta-section h2{margin-bottom:16px;}
+.cta-section p{font-size:16px;color:var(--muted2);max-width:500px;margin:0 auto 40px;}
+footer{background:#050505;border-top:1px solid var(--border2);padding:32px 56px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);}
+footer a{color:var(--gold);}
+@media(max-width:768px){nav{padding:14px 20px;}.hero,.section,.cta-section{padding-left:20px;padding-right:20px;}.hero{padding-top:100px;}.funnel-stage{grid-template-columns:1fr;}.what-grid,.truth-grid{grid-template-columns:1fr;}footer{flex-direction:column;gap:12px;text-align:center;padding:24px 20px;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="https://buzzburstsmedia.com" class="nav-logo">Buzz<span>Burst</span> Media</a>
+  <a href="https://buzzburstsmedia.com/#services" class="nav-back">← All Services</a>
+  <a href="https://buzzburstmedia.co" class="btn-gold">Get a Quote →</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-tag">📊 Marketing Funnel Strategy</div>
+  <h1>More traffic won't fix<br>a <em>broken funnel.</em></h1>
+  <p class="hero-sub">Most startups pour money into traffic — ads, SEO, social — and wonder why it's not converting. The problem usually isn't the traffic. It's the funnel. We map your customer journey end-to-end and build the system to move people from stranger to buyer.</p>
+  <div class="hero-actions">
+    <a href="https://buzzburstmedia.co" class="btn-gold">Get a Funnel Audit →</a>
+    <a href="https://buzzburstsmedia.com/#contact" class="btn-outline">Book a Call</a>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-tag">The Full Funnel</div>
+  <h2>Every stage. Every touchpoint. Optimised.</h2>
+  <p class="section-sub" style="margin-bottom:48px;">A leaking funnel loses you money at every stage. We find the leaks and fix them — systematically.</p>
+  <div class="funnel">
+    <div class="funnel-stage">
+      <div class="fs-label">
+        <div class="fs-stage">Awareness</div>
+        <div class="fs-sub">Top of Funnel</div>
+      </div>
+      <div class="fs-content">
+        <div class="fs-title">Getting your brand in front of the right people</div>
+        <p class="fs-desc">The top of your funnel is about reach and relevance. We identify where your ideal customers spend time and build the content and campaigns that introduce your brand in a way that makes people want to learn more.</p>
+        <div class="fs-tactics"><span class="tactic">SEO</span><span class="tactic">GEO</span><span class="tactic">TikTok</span><span class="tactic">Meta Ads</span><span class="tactic">Content Marketing</span></div>
+      </div>
+    </div>
+    <div class="funnel-stage">
+      <div class="fs-label">
+        <div class="fs-stage">Interest</div>
+        <div class="fs-sub">Middle of Funnel</div>
+      </div>
+      <div class="fs-content">
+        <div class="fs-title">Nurturing curiosity into genuine consideration</div>
+        <p class="fs-desc">Once someone knows you exist, you need to give them reasons to care. We build the content, email sequences and retargeting campaigns that keep your brand present — and keep building trust — until they're ready to act.</p>
+        <div class="fs-tactics"><span class="tactic">Email Nurture</span><span class="tactic">Retargeting</span><span class="tactic">Lead Magnets</span><span class="tactic">Blog Content</span></div>
+      </div>
+    </div>
+    <div class="funnel-stage">
+      <div class="fs-label">
+        <div class="fs-stage">Decision</div>
+        <div class="fs-sub">Bottom of Funnel</div>
+      </div>
+      <div class="fs-content">
+        <div class="fs-title">Converting consideration into commitment</div>
+        <p class="fs-desc">This is where most funnels leak. The prospect is interested but not converted. We optimise landing pages, pricing pages, calls-to-action, and conversion flows to remove friction and make saying yes as easy as possible.</p>
+        <div class="fs-tactics"><span class="tactic">Landing Pages</span><span class="tactic">CTA Optimisation</span><span class="tactic">Social Proof</span><span class="tactic">Offers</span></div>
+      </div>
+    </div>
+    <div class="funnel-stage">
+      <div class="fs-label">
+        <div class="fs-stage">Retention</div>
+        <div class="fs-sub">Post-Purchase</div>
+      </div>
+      <div class="fs-content">
+        <div class="fs-title">Turning customers into repeat buyers and referrers</div>
+        <p class="fs-desc">Acquiring a customer is expensive. Keeping them costs a fraction of that. We build the post-purchase email flows, loyalty mechanisms and referral frameworks that maximise customer lifetime value.</p>
+        <div class="fs-tactics"><span class="tactic">Post-Purchase Emails</span><span class="tactic">LTV Optimisation</span><span class="tactic">Referral Systems</span><span class="tactic">Upsells</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">What We Deliver</div>
+  <h2>A complete funnel system</h2>
+  <p class="section-sub">We don't just draw a diagram. We build the actual system — the pages, the emails, the campaigns, the tracking.</p>
+  <div class="what-grid">
+    <div class="wi">
+      <div class="wi-icon">🗺️</div>
+      <div class="wi-title">Customer Journey Mapping</div>
+      <p class="wi-desc">A full map of how your ideal customer moves from first awareness to purchase — including every touchpoint, every question they ask, and every objection they raise.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">🔎</div>
+      <div class="wi-title">Funnel Audit</div>
+      <p class="wi-desc">We identify exactly where your funnel is leaking — which stage is losing the most prospects and why. Prioritised by impact so we fix what matters most first.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">📄</div>
+      <div class="wi-title">Landing Page Strategy</div>
+      <p class="wi-desc">High-converting landing pages built around your offer, your audience's language, and a clear single action. Tested and optimised continuously.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">✉️</div>
+      <div class="wi-title">Email Automation</div>
+      <p class="wi-desc">The automated sequences that nurture leads through every stage of the funnel — welcome, nurture, conversion, post-purchase and re-engagement.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">📊</div>
+      <div class="wi-title">Conversion Tracking</div>
+      <p class="wi-desc">Full attribution setup so you know exactly which touchpoints are driving conversions at every stage. No guessing — just data.</p>
+    </div>
+    <div class="wi">
+      <div class="wi-icon">🔄</div>
+      <div class="wi-title">Ongoing Optimisation</div>
+      <p class="wi-desc">We monitor conversion rates at every funnel stage and run continuous improvement cycles — testing, learning and iterating until performance peaks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-tag">Where Funnels Break</div>
+  <div class="truth-grid">
+    <div class="truth-content">
+      <h2>You're probably losing customers right now</h2>
+      <p>Most businesses have a funnel — they just don't know it. <strong>Every time a visitor leaves without converting, a lead goes cold, or a customer doesn't come back, that's a leak.</strong></p>
+      <p>The good news is leaks are fixable. And fixing them doesn't require more ad spend — it requires understanding where people are dropping off and why. That's exactly what we do.</p>
+    </div>
+    <div class="leaks">
+      <div class="leak">
+        <div class="leak-title">Homepage bounce rate over 70%</div>
+        <p class="leak-desc">Your messaging isn't connecting with the right audience — or the right audience isn't finding you.</p>
+      </div>
+      <div class="leak">
+        <div class="leak-title">Leads that go cold after first contact</div>
+        <p class="leak-desc">No nurture sequence means you're relying on perfect timing. Most people aren't ready to buy immediately.</p>
+      </div>
+      <div class="leak">
+        <div class="leak-title">High ad spend, low conversion rate</div>
+        <p class="leak-desc">Traffic lands on a page that wasn't built to convert. The ad isn't the problem — the destination is.</p>
+      </div>
+      <div class="leak">
+        <div class="leak-title">Customers who buy once and disappear</div>
+        <p class="leak-desc">No post-purchase sequence means you're leaving repeat revenue on the table every single month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-tag" style="display:block;margin-bottom:16px;">Fix Your Funnel</div>
+  <h2>Stop losing customers<br>you already have</h2>
+  <p>Book a free funnel audit. We'll map your current customer journey, identify the biggest leaks, and give you a clear plan to fix them.</p>
+  <a href="https://buzzburstmedia.co" class="btn-gold" style="font-size:15px;padding:16px 36px;">Get a Free Funnel Audit →</a>
+</section>
+
+<footer>
+  <span>© 2026 BuzzBurst Media. London, UK.</span>
+  <a href="https://buzzburstsmedia.com">← Back to main site</a>
+</footer>
+</body>
+</html>
